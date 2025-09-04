@@ -2286,6 +2286,23 @@ textarea.w-select {
     display: block;
 }
 
+.review-img {
+  width: 64px;          
+  height: 64px;         
+  border-radius: 50%;    
+  overflow: hidden;      
+  flex-shrink: 0;
+}
+
+.review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+}
+
+
 @media screen and (max-width: 991px) {
     .w-layout-blockcontainer {
         max-width: 728px;
@@ -5292,4 +5309,5 @@ figure {
         justify-self: end;
     }
 }
+
 
