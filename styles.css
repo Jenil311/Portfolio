@@ -2108,6 +2108,30 @@ textarea.w-select {
     position: static;
 }
 
+/* Circle logo in the review cards */
+.review-img {
+  width: 56px;           /* smaller circle */
+  height: 56px;          /* must match width */
+  border-radius: 50%;
+  overflow: hidden;      /* clip to circle */
+  padding: 6px;          /* makes the logo sit a bit smaller inside */
+  background: #fff;      /* optional: white ring around logos */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Make the image fit inside without getting cropped weirdly */
+.review-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* show entire logo inside circle */
+  object-position: center;
+  display: block;
+}
+
+
 @media screen and (max-width: 991px) {
     .w-nav[data-collapse="medium"] .w-nav-menu {
         display: none;
@@ -5309,5 +5333,6 @@ figure {
         justify-self: end;
     }
 }
+
 
 
